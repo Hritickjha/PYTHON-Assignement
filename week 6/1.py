@@ -1,12 +1,8 @@
-def convertToBinary(num):
-    bit = []
-    while num != 0:
-        remd = num % 2
-        bit.append(remd)
-        num = num // 2
-    bit.reverse()
-    return bit
+if __name__ == '__main__':
+    password = input('Enter your new password:   ')
+    check = input('Re-enter the same password:')
 
-if __name__ == "__main__":
-    value = 17
-    print(f"The binary of {value} is {convertToBinary(value)}")
+    if password == check:
+        print('Password Set')
+    else:
+        print('Error. Passwords do not match.')
